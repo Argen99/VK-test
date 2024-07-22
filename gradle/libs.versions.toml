@@ -1,0 +1,46 @@
+[versions]
+agp = "8.5.0-alpha08"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+constraintlayout = "2.1.4"
+navigation = "2.7.7"
+viewBindingDelegate = "1.5.9"
+coroutines = "1.8.0"
+koin = "3.5.3"
+retrofit = "2.9.0"
+logging-interceptor = "4.11.0"
+lifecycle = "2.7.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+ui-material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+ui-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+ui-viewBindingDelegate = { group = "com.github.kirich1409", name = "viewbindingpropertydelegate-noreflection", version.ref = "viewBindingDelegate" }
+navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+
+retrofit2-retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit2-converter-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp3-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "logging-interceptor" }
+
+lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+navigation-safeArgs = { id = "androidx.navigation.safeargs.kotlin", version.ref = "navigation" }
+
+
+[bundles]
+ui = ["ui-material","ui-constraintlayout", "ui-viewBindingDelegate", "navigation-fragment-ktx", "navigation-ui-ktx"]
+retrofit = ["retrofit2-retrofit", "retrofit2-converter-gson", "okhttp3-logging-interceptor"]
+lifecycle = ["lifecycle-viewmodel", "lifecycle-runtime"]
+
+

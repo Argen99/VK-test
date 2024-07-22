@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VK-Test</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="convert_fragment_label">Convert Fragment</string>
+    <string name="result_fragment_label">Result Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hint_et_sum">Введите сумму</string>
+    <string name="title_btn_convert">Конвертировать</string>
+    <string name="text_convert_to">Ковертировать в:</string>
+    <string name="text_result">Результат:</string>
+</resources>

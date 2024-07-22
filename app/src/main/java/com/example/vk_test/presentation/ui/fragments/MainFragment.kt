@@ -22,7 +22,9 @@ class MainFragment : BaseFragment<FragmentMainBinding, MainViewModel>(R.layout.f
             Currencies.entries
         )
         viewBinding.spinnerCovertFrom.adapter = spinnerAdapter
+        viewBinding.spinnerCovertFrom.setSelection(spinnerAdapter.getPosition(Currencies.RUB))
         viewBinding.spinnerCovertTo.adapter = spinnerAdapter
+        viewBinding.spinnerCovertTo.setSelection(spinnerAdapter.getPosition(Currencies.USD))
     }
 
     override fun setupListeners() {

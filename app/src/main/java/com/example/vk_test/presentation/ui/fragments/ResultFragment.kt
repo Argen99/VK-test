@@ -1,5 +1,6 @@
 package com.example.vk_test.presentation.ui.fragments
 
+import android.annotation.SuppressLint
 import android.widget.Toast
 import androidx.navigation.fragment.navArgs
 import by.kirich1409.viewbindingdelegate.viewBinding
@@ -22,6 +23,7 @@ class ResultFragment : BaseFragment<FragmentResultBinding, MainViewModel>(R.layo
         )
     }
 
+    @SuppressLint("SetTextI18n")
     override fun launchObservers() {
         viewModel.convertState.spectateUiState(
             progressBar = viewBinding.progressBar,
@@ -29,7 +31,7 @@ class ResultFragment : BaseFragment<FragmentResultBinding, MainViewModel>(R.layo
                 Toast.makeText(requireContext(), it, Toast.LENGTH_LONG).show()
             },
             success = {
-                viewBinding.tvResult.text = it.result.values.first().toString()
+                viewBinding.tvResult.text = "${it.result.values.first()} ${it.result.keys.first()}"
             }
         )
     }

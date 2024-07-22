@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/FirstFragment"
         android:name="com.example.vk_test.presentation.ui.fragments.MainFragment"
-        android:label="@string/first_fragment_label"
+        android:label="@string/convert_fragment_label"
         tools:layout="@layout/fragment_main">
 
         <action
@@ -18,7 +18,7 @@
     <fragment
         android:id="@+id/SecondFragment"
         android:name="com.example.vk_test.presentation.ui.fragments.ResultFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/result_fragment_label"
         tools:layout="@layout/fragment_result">
 
         <action

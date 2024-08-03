@@ -15,7 +15,7 @@ interface MainApiService {
     ) : ConvertResponseDto
 
     companion object {
-        const val API_KEY = "73499f1cb9-b817cc36f3-sgyv21"
+        const val API_KEY = "b3e4f35203-ee5d6d154c-shn1p0"
         const val CONVERT_ENDPOINT = "convert"
     }
 }
